@@ -1,0 +1,9 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins');
+
+.container{
+	font-family: 'Poppins';
+}
+.container h1{
+	text-align: center;
+
+}

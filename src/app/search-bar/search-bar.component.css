@@ -1,0 +1,41 @@
+.container{
+	margin-top:50px;
+}
+.container .jumbotron form{
+	width: 70%;
+}
+
+.container .jumbotron{
+	display:flex;
+	justify-content: center;
+}
+
+.container h1 a{
+	text-decoration: none;
+}
+
+#sect1{
+	width: 45%;
+	padding-left:70px;
+}
+
+#sect{
+	width: 45%;
+	padding-left:70px;
+}
+
+.container-fluid{
+	display:flex;
+}
+
+#sect2{
+	position:absolute;
+	right:65px;
+}
+
+.container h1 a{
+	cursor:pointer;
+	color:blue;
+}
+
+#reachLinks h1 span{margin-left:10px;}

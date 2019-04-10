@@ -1,0 +1,14 @@
+<div class="container">
+	<div class="row">
+		<div class="col-sm-11 media">
+			<iframe width="525" height="344" [src]="verified_url()"frameborder="0" allowfullscreen></iframe>	<!-- on bind l'attribut src de notre iframe avec l'url vérifié -->
+		</div>
+		<div class="col-sm-1">
+				<button title="Add to Bookmark" class="btn btn-success" (click)="book.addToBook(this.YT_url)"><i class="fas fa-plus-circle"></i></button>
+		</div>
+	</div>
+</div>
+
+
+
+

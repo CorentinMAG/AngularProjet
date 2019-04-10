@@ -1,0 +1,31 @@
+<div class="container">
+	<div class="jumbotron">
+		<form (ngSubmit)="onSubmit(f)" #f="ngForm">
+			<div class="form-group input-group">
+				<input type="text" id="zoneURL" name="inputURL" ngModel class="form-control" placeholder="Entrer votre URL" required>
+				<span class="input-group-btn">
+					<button class="btn btn-success" type="submit" [disabled]="f.invalid">Valider</button>
+				</span>
+			</div>
+		</form>
+	</div>
+</div>
+
+<div class="container" id="reachLinks">
+			<h1 class="display-4"><a (click) ="affHisto()">Historique</a> /<a (click)="affBook()"> Bookmark</a><span *ngIf="this.book.Book.length !=0" class="badge badge-dark">{{this.book.Book.length}}</span></h1>
+			<hr>			
+</div>
+<div class="container-fluid">
+	<div id ="sect1" *ngIf="afficherHisto">
+			<app-history [OnUrl]="youtube_url"></app-history>
+	</div>
+
+	<div id="sect" *ngIf="afficherBook">
+		<app-bookmarks></app-bookmarks>
+	</div>
+
+	<div id="sect2" *ngIf="controle">  <!--la div s'affiche si la valeur de controle est true--> 
+		<app-video-view [YT_url] = "youtube_url"></app-video-view>
+	</div>
+</div>
+
