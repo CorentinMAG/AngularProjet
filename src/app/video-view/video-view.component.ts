@@ -17,9 +17,9 @@ export class VideoViewComponent {
 
 	
 
-	constructor(private sanitizer: DomSanitizer,
-				private replay:HistoryService,
-				private book:BookService) {
+	constructor(public sanitizer: DomSanitizer,
+				public replay:HistoryService,
+				public book:BookService) {
 	}
 
 

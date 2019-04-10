@@ -18,8 +18,8 @@ export class SearchBarComponent implements OnInit {
   afficherBook:boolean = false;  //pour afficher ou non le component bookmarks
 
 
-  constructor(private book:BookService,
-              private histo:HistoryService) {
+  constructor(public book:BookService,
+              public histo:HistoryService) {
   }
 
 

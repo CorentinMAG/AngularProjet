@@ -11,7 +11,7 @@ import {HistoryService} from '../history.service';
 })
 export class HistoryComponent implements OnInit {
 
-	constructor(private urls:HistoryService){}
+	constructor(public urls:HistoryService){}
 
 	@Input() OnUrl;  //on récupère notre url
 

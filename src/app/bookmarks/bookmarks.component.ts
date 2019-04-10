@@ -10,7 +10,7 @@ import{BookService} from '../history.service';
 export class BookmarksComponent implements OnInit {
 
 
-  constructor(private book:BookService) { }
+  constructor(public book:BookService) { }
 
   ngOnInit() {
   }
